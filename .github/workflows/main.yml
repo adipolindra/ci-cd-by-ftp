@@ -1,13 +1,13 @@
-name: 🚀 Deploy website on push
+name: Deploy website by ci/cd by ftp
 on:
   push:
     branches:
       - main
 jobs:
   web-deploy:
-    name: 🎉 Deploy website
+    name: Deploy website
     runs-on: ubuntu-latest
-    environment: Aapanel   # ⬅️ tambahkan ini, sama persis dengan nama environment-mu
+    environment: Aapanel   # sesuaikan env yang dibuat di repo
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
